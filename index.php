@@ -36,7 +36,7 @@
         $smtpPort = 465;
         $smtpUsername = "val59roger@gmail.com";
         $smtpPassWord ="gudk iyiu pzes xneq";
-        $date = date('l jS \of F Y h:i:s A');
+        $date = date('');
 
 
         $mail = new PHPMailer(true);
