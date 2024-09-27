@@ -181,9 +181,6 @@
         <div class="container">
             <form action="../index.php" method="post">
                 <div class="form-group">
-                    <?php if (isset($_GET['error'])) { ?>
-                        <p class="error"><?php echo $_GET['error']; ?></p>
-                    <?php } ?> 
                     <label for="name">Nom : <span>*</span></label>
                     <input type="text" id="name" name="name" placeholder="Nom" minlength="4" maxlength="15" required>
                 </div>

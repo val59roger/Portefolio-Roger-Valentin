@@ -13,22 +13,22 @@
     }
     if(empty($nom))
     {
-        header("Location:home.php?error=Votre nom est requis");
+        header("Location:home.html?error=Votre nom est requis");
         exit();
     }
     else if (empty($prenom)) 
     {
-        header("Location:home.php?error=Votre prenom est requis");
+        header("Location:home.html?error=Votre prenom est requis");
         exit();
     }
     else if(empty($email))
     {
-        header("Location:home.php?error=Votre adresse mail est requis");
+        header("Location:home.html?error=Votre adresse mail est requis");
         exit();
     }
     else if(empty($message))
     {
-        header("Location:home.php?error=un message est requis");
+        header("Location:home.html?error=un message est requis");
         exit();
     }
     else{      
@@ -68,13 +68,13 @@
                                 </body>
                             </html>";
             $mail->send();
-            header('Location: home.php');
+            header('Location: home.html');
             exit();
         } else {
-            header("Location:home.php?error=le mail est inconnue");
+            header("Location:home.html?error=le mail est inconnue");
         }
         } catch (Exception $e) {
-            header("Location:home.php?error=erreur lors de l'envoie de mail : {$mail->ErrorInfo}");
+            header("Location:home.html?error=erreur lors de l'envoie de mail : {$mail->ErrorInfo}");
         }
     }
 ?>
