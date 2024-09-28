@@ -407,6 +407,7 @@ footer{
 
     /* Footer */
     footer {
+        width: 100%;
         height: auto;
         padding: 20px;
         font-size: 12px;
