@@ -14,7 +14,7 @@
 }
 
 * {
-    box-sizing: border-box;
+    border: solid var(--gris-souris);
 }
 
 body{
