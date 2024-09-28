@@ -16,7 +16,7 @@
 body{
     background-color: var(--blanc-neige);
     margin: 0 auto;
-    overflow: auto;
+    box-sizing: border-box;
 }
 
 h1, h2 {
