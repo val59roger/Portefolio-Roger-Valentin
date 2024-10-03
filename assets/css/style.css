@@ -371,8 +371,9 @@ footer{
         font-size: 12px;
     }
 
-    th, td {
-        padding: 0px;
+    th {
+        padding: 5px;
+        font-size: 14px;
     }
 
     .table-skills img {
