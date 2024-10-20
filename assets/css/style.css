@@ -36,7 +36,7 @@ p, span{
 
 .block-presentation{
     width: 100%;
-    height: 742px;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@ p, span{
 }
 
 
-/* ---------- block de about ---------- */
+/* ---------- block de about & objectifs ---------- */
 
 .block-about {
     background-color: var(--noir-charbon);
@@ -75,17 +75,40 @@ p, span{
     font-size: 22px;
 }
 
+.text-container-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container-about p, .text-container-about h2 {
+    width: 800px;
+    text-align: left;
+}
+
 .component-text {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     font-size: 22px;
+    margin-top: 5%;
+}
+
+.block-objectifs {
+    background-color: var(--blanc-neige);
+    width: 100%;
+    height: auto;
+    padding-bottom: 100px;
+    color: var(--noir-charbon);
+    font-size: 22px;
 }
 
 .CV{
     width: 550px;
     height: 810px;
+    border: solid var(--noir-charbon);
 }
 
 .text-container {
@@ -98,6 +121,34 @@ p, span{
 .text-container p, .text-container h2 {
     width: 800px;
     text-align: left;
+}
+
+.text-container .info{
+    color: var(--bleu-sombre);
+}
+
+.text-container h3{
+    color: var(--bleu-clair);
+    text-transform: uppercase;
+}
+
+.download{
+    background-color: var(--bleu-sombre);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 50%;
+    font-size: 16px;
+}
+
+.download a{
+    text-decoration: none;
+    color: var(--blanc-neige);
+}
+
+.download:hover {
+    background-color: var(--bleu-clair);
 }
 
 /* ---------- block de formation ---------- */
@@ -246,7 +297,7 @@ th, td {
     margin-left: 6%;
 }
 
-.extra-content .sub-title{
+.sub-title{
     font-size: 22px;
     font-weight: bold;
     
@@ -307,7 +358,7 @@ footer{
     /* Block de présentation */
     .block-presentation {
         flex-direction: column;
-        height: auto;
+        height: 100vh;
         padding: 20px 10px;
     }
 
@@ -323,13 +374,19 @@ footer{
     }
 
     /* Block About */
-    .block-about {
+    .block-about, .block-objectifs {
         padding: 20px 10px;
         font-size: 16px;
     }
 
     .component-text {
         flex-direction: column;
+    }
+
+    .text-container-about p, .text-container-about h2 {
+        width: 100%;
+        font-size: 14px;
+        text-align: center;
     }
 
     .text-container p, .text-container h2 {
@@ -339,8 +396,17 @@ footer{
     }
 
     .CV{
+        margin-top: 20px;
         width: 100%;
         height: auto;
+    }
+
+    .block-objectifs .component-text:nth-child(1) {
+        flex-direction: column;
+    }
+
+    .block-objectifs .component-text:nth-child(2) {
+        flex-direction: column-reverse;
     }
 
     /* Block formation, expérience et projets */
