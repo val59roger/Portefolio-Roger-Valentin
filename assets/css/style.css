@@ -250,6 +250,7 @@ th, td {
 
 .card{
     box-sizing: border-box;
+    background-color: var(--blanc-neige);
     width: 80%;
     margin: 20px auto;
     padding: 10px 30px;
@@ -300,7 +301,6 @@ th, td {
 .sub-title{
     font-size: 22px;
     font-weight: bold;
-    
     color: red;
     padding: 10px 0px 10px 0;
 }
@@ -420,7 +420,7 @@ footer{
     }
 
     .extra-content {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .extra-content img{
